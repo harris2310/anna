@@ -1,0 +1,63 @@
+.tarrot-1-container {
+  @include tarrotCard;
+}
+
+.tarrot-2-container {
+  @include tarrotCard;
+}
+
+.tarrot-3-container {
+  @include tarrotCard;
+}
+
+.tarrot-4-container {
+  @include tarrotCard;
+}
+
+.nav-item-home {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: $light-blue;
+  text-decoration: none;
+}
+
+.nav-item-about {
+  @include navItem;
+  padding: 1em;
+}
+
+.nav-item-contact {
+  @include navItem;
+  padding: 10px;
+}
+
+
+.custom-right-arrow {
+  position: absolute !important;
+  right: 20px;
+  z-index: 1;
+  border: 2px solid #f4c7c7;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+  background: none;
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.custom-left-arrow {
+  position: absolute !important;
+  left: 20px;
+  z-index: 1;
+  border: 2px solid #f4c7c7;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+  opacity: 0.8;
+  background: none;
+  cursor: pointer;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}

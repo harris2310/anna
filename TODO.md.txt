@@ -1,0 +1,4 @@
+HIGH PRIORITY
+*Carousel
+*Contact form
+*About

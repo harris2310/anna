@@ -1,29 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  min-height: 100vh;
 }
 
 body {
-  height: 100vh;
-  background-color: rgb(228, 221, 230);
+  position: relative;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: #3c4e64;
 }
 
-.title-layout {
-  margin: 2em;
-  margin-top: 4em;
-}
-
-.title-text {
-  font-size: 2em;
-  font-weight: 600;
-  font-family:'Courier New', Courier, monospace;
-}
-
-.collage-1-container {
-  width: 500px;
-  height: auto;
-  margin: auto;
-}
 
 img {
   max-width: 100%;
@@ -32,17 +24,45 @@ img {
 
 .nav-main {
   display: flex;
-  margin: 2em;
-  font-family:'Courier New', Courier, monospace;
+  gap: 30px;
+  font-family: $poppins-font;
+  padding: 2em;
 }
 
-.nav-item-home {
+.nav-title {
+  flex: 4;
+  text-align: center;
+}
+
+.nav-links {
   flex: 1;
-  font-size: 1.5em;
-  font-weight: 500;
 }
 
-.nav-item-about {
-  flex: 7;
+.nav-empty-cell {
+  flex: 1;
+}
+
+.tarrot {
+  margin-top: 3em;
+}
+
+.tarrot-cards {
+  margin: auto;
+  width: 70%;
+  margin-top: 4em;
+}
+
+.about-layout {
+  text-align: center;
+  margin-top: 2em;
   font-size: 1.5em;
+  color: $light-blue;
+}
+
+.footer-layout {
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
