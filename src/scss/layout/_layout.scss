@@ -12,10 +12,10 @@ html {
 body {
   position: relative;
   min-height: 100vh;
+  font-family: $poppins-font;
   min-height: -webkit-fill-available;
-  background-color: #3c4e64;
+  background-color: #3d566f;
 }
-
 
 img {
   max-width: 100%;
@@ -44,6 +44,7 @@ img {
 
 .tarrot {
   margin-top: 3em;
+  text-align: center;
 }
 
 .tarrot-cards {
@@ -51,6 +52,15 @@ img {
   width: 70%;
   margin-top: 4em;
 }
+
+.form {
+  text-align: center;
+ }
+ 
+ form {
+   display: inline-block;
+   margin: 4em;
+ }
 
 .about-layout {
   text-align: center;
@@ -61,8 +71,61 @@ img {
 
 .footer-layout {
   margin-bottom: 10px;
+  margin-top: 100px;
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 1em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-item-about {
+    display: none;
+  }
+  
+  .nav-item-contact {
+    display: none;
+  }
+
+  .nav-links {
+    height: 30px;
+    max-width: 35px;
+    display: block;
+    background: linear-gradient(
+      to bottom, 
+      $light-blue, $light-blue 10%, 
+      $dark-blue 10%, $dark-blue 40%, 
+      $light-blue 40%, $light-blue 50%, 
+      $dark-blue 50%, $dark-blue 90%, 
+      $light-blue 90%, $light-blue 100%
+    );
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

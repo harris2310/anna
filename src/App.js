@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Contact from './components/Contact';
-import Collages from './components/Collages';
+import Main from './components/Main';
 import Footer from './components/Footer';
 import './css/style.css';
 
@@ -25,12 +25,10 @@ function App() {
         <Route
           path="/"
           element={(
-            <div>
-              <Collages
-                handleCarouselChange={handleCarouselChange}
-                setLaugh={setLaugh}
-              />
-            </div>
+            <Main
+              handleCarouselChange={handleCarouselChange}
+              setLaugh={setLaugh}
+            />
           )}
         />
         <Route

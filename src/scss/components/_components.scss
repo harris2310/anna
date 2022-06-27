@@ -1,36 +1,18 @@
 .tarrot-1-container {
-  @include tarrotCard;
+  @include tarrot-card;
 }
 
 .tarrot-2-container {
-  @include tarrotCard;
+  @include tarrot-card;
 }
 
 .tarrot-3-container {
-  @include tarrotCard;
+  @include tarrot-card;
 }
 
 .tarrot-4-container {
-  @include tarrotCard;
+  @include tarrot-card;
 }
-
-.nav-item-home {
-  font-size: 1.5em;
-  font-weight: 400;
-  color: $light-blue;
-  text-decoration: none;
-}
-
-.nav-item-about {
-  @include navItem;
-  padding: 1em;
-}
-
-.nav-item-contact {
-  @include navItem;
-  padding: 10px;
-}
-
 
 .custom-right-arrow {
   position: absolute !important;
@@ -60,4 +42,52 @@
   cursor: pointer;
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+
+form label {
+  color: $light-blue;
+  font-size: smaller;
+}
+
+input {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+textarea {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: white;
+  border: 1px solid white;
+  margin-top: 3em;
+}
+
+input[type=submit]:hover {
+  width: 100%;
+  background-color: $light-blue;
+  border: 1px solid $light-blue;
+}
+
+.error-message {
+  @include error-message;
+}
+
+.instagram-link {
+  @include icon-links
+}
+
+.linkedin-link {
+  @include icon-links
 }

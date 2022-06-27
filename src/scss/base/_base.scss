@@ -1,23 +1,34 @@
-.title-link {
-  font-size: 2em;
+.nav-item-title {
+  @include nav-item(0);
   font-weight: 600;
-  font-family: $poppins-font;
-  color: #cee0e4;
-  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.nav-item-about {
+  @include nav-item(0.5em);
+}
+
+.nav-item-contact {
+  @include nav-item(0.5em);
+}
+
+.nav-item-collages {
+  @include nav-item(0.5em);
+}
+
+.nav-item-poems {
+  @include nav-item(0.5em);
 }
 
 .copyright-text {
-  color: #cee0e4;
-  font-family: $poppins-font;
+  color: $light-blue;
+  font-size: smaller;
 }
 
 .arcana-text {
   text-align: center;
   color: #f4c7c7;
-  font-size: 2em;
-  font-family: $poppins-font;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
-.about-text {
-  font-family: $poppins-font;
-}

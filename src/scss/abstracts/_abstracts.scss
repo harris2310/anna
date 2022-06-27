@@ -1,14 +1,28 @@
 $light-blue: #cee0e4;
+$dark-blue: #3d566f;
+$light-pink: #f4c7c7;
 $poppins-font: 'Poppins', sans-serif;
 
-@mixin navItem() {
-  font-size: 1.5em;
+@mixin nav-item($padding) {
+  font-size: 1em;
   font-weight: 400;
   color: $light-blue;
   text-decoration: none;
+  padding: $padding;
 }
 
-@mixin tarrotCard() {
+@mixin tarrot-card() {
   max-width: 500px;
   height: auto;
+}
+
+@mixin icon-links() {
+  width: 2em;
+  height: 2em;
+}
+
+@mixin error-message() {
+  display:block;
+  color: $light-pink;
+  margin-bottom: 1em;
 }

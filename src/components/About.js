@@ -5,7 +5,8 @@ const About = () => (
   <div className="about-layout">
     <div className="about-text">
       Anna Bakogeorgou
-      Graphic Designer
+      <br />
+      Artist
     </div>
   </div>
 );

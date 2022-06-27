@@ -1,4 +1,18 @@
 HIGH PRIORITY
-*Carousel
+*Carousel Zoom in on Click
 *Contact form
 *About
+*Responsive
+*Footer links
+
+
+MEDIUM PRIORITY
+
+
+LOW PRIORITY
+*eShop
+
+
+
+DONE
+*Carousel

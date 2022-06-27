@@ -6,7 +6,13 @@ import { Link } from 'react-router-dom';
 const NavBar = () => (
   <div>
     <nav className="nav-main">
-      <div className="nav-links">
+      <div>
+        <Link to="/collages" className="nav-item-collages">
+          Collages
+        </Link>
+        <Link to="/poems" className="nav-item-poems">
+          Poems
+        </Link>
         <Link to="/about" className="nav-item-about">
           About
         </Link>
@@ -15,7 +21,7 @@ const NavBar = () => (
         </Link>
       </div>
       <div className="nav-title">
-        <Link to="/" className="title-link">Anna Bakogeorgou</Link>
+        <Link to="/" className="nav-item-title">Anna Bakogeorgou</Link>
       </div>
       <div className="nav-empty-cell" />
     </nav>
