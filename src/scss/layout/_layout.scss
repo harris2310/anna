@@ -25,7 +25,6 @@ img {
 .nav-main {
   display: flex;
   gap: 30px;
-  font-family: $poppins-font;
   padding: 2em;
 }
 
@@ -86,12 +85,20 @@ img {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .nav-item-about {
     display: none;
   }
   
   .nav-item-contact {
+    display: none;
+  }
+  
+  .nav-item-poems {
+    display: none;
+  }
+  
+  .nav-item-collages {
     display: none;
   }
 
@@ -108,21 +115,6 @@ img {
       $light-blue 90%, $light-blue 100%
     );
   }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

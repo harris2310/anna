@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => (
   <div>
     <nav className="nav-main">
-      <div>
+      <div className="nav-links">
         <Link to="/collages" className="nav-item-collages">
           Collages
         </Link>

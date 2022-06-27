@@ -80,6 +80,13 @@ input[type=submit]:hover {
   border: 1px solid $light-blue;
 }
 
+.success-message {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 2em;
+  color: $light-pink;
+}
+
 .error-message {
   @include error-message;
 }

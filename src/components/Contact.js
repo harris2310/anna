@@ -5,7 +5,6 @@
 import React from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import instagramURL from '../icons/instagram-logo.png';
-import linkedinURL from '../icons/linkedin-logo.png';
 
 const Contact = (props) => {
   const {
@@ -13,7 +12,10 @@ const Contact = (props) => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = props.handleFormSubmit;
+  const onSubmit = (data) => {
+    props.handleFormSubmit(data);
+  };
+
   return (
     <div className="form">
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -32,16 +34,17 @@ const Contact = (props) => {
         </label>
         {errors.yourMessage && <span className="error-message">This field is required</span>}
         <input type="submit" />
+        {props.formSubmitted
+        && (
+        <div className="success-message">
+          Success
+        </div>
+        )}
       </form>
       <div className="social-links">
         <div>
           <a href="https://www.instagram.com/anna_bakogeorgou/">
             <img src={instagramURL} alt="instagram logo" className="instagram-link" />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/xxri145/">
-            <img src={linkedinURL} alt="linkedin logo" className="linkedin-link" />
           </a>
         </div>
       </div>

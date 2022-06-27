@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -8,15 +9,20 @@ import Footer from './components/Footer';
 import './css/style.css';
 
 function App() {
-  const handleFormSubmit = () => {
-  };
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const handleCarouselChange = (index) => {
-    index += 2;
-    return index;
+  const handleFormSubmit = (e) => {
+    const serviceId = 'service_qq1m8dp';
+    const templateId = 'template_standard';
+    const userId = 'user_LOSNyooKn4kN1NC1ZmDb5';
+    console.log(e);
+    emailjs.send(serviceId, templateId, e, userId)
+      .then((res) => {
+        setFormSubmitted(true);
+      }, (err) => {
+        console.log(err);
+      });
   };
-
-  const [laugh, setLaugh] = useState(0);
 
   return (
     <div>
@@ -25,10 +31,7 @@ function App() {
         <Route
           path="/"
           element={(
-            <Main
-              handleCarouselChange={handleCarouselChange}
-              setLaugh={setLaugh}
-            />
+            <Main />
           )}
         />
         <Route
@@ -45,6 +48,7 @@ function App() {
             <div>
               <Contact
                 handleFormSubmit={handleFormSubmit}
+                formSubmitted={formSubmitted}
               />
             </div>
           )}

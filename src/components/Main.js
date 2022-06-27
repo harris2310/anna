@@ -8,7 +8,7 @@ import collage2URL from '../collages/tarrot2.png';
 import collage3URL from '../collages/tarrot3.png';
 import collage4URL from '../collages/tarrot4.png';
 
-const Main = (props) => (
+const Main = () => (
   <div className="tarrot">
     <div className="arcana-text">
       Major Arcana
