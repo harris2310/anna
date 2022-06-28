@@ -12,6 +12,7 @@
     "react-burger-menu": "^3.0.8",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.33.0",
+    "react-medium-image-zoom": "^4.4.3",
     "react-multi-carousel": "^2.8.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router": "^6.3.0",

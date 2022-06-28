@@ -1,9 +1,9 @@
 HIGH PRIORITY
 *Carousel Zoom in on Click
-*Contact form
+*Favicon
 *About
+*Logo
 *Responsive
-*Footer links
 
 
 MEDIUM PRIORITY
@@ -15,4 +15,6 @@ LOW PRIORITY
 
 
 DONE
+*Footer links
+*Contact form
 *Carousel

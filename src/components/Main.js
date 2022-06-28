@@ -1,12 +1,14 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import Carousel from 'react-multi-carousel';
+import Zoom from 'react-medium-image-zoom';
 import { CustomLeftArrow, CustomRightArrow } from './CustomArrows';
+import 'react-medium-image-zoom/dist/styles.css';
 import 'react-multi-carousel/lib/styles.css';
-import collage1URL from '../collages/tarrot1.png';
-import collage2URL from '../collages/tarrot2.png';
-import collage3URL from '../collages/tarrot3.png';
-import collage4URL from '../collages/tarrot4.png';
+import collage1URL from '../collages/tarrot1-edit.png';
+import collage2URL from '../collages/tarrot2-edit.png';
+import collage3URL from '../collages/tarrot3-edit.png';
+import collage4URL from '../collages/tarrot4-edit.png';
 
 const Main = () => (
   <div className="tarrot">
@@ -52,16 +54,24 @@ const Main = () => (
       }}
     >
       <div className="tarrot-1-container">
-        <img src={collage1URL} alt="collage-1" />
+        <Zoom overlayBgColorEnd="#3d566f">
+          <img src={collage1URL} alt="collage-1" />
+        </Zoom>
       </div>
       <div className="tarrot-2-container">
-        <img src={collage2URL} alt="collage-1" />
+        <Zoom overlayBgColorEnd="#3d566f">
+          <img src={collage2URL} alt="collage-1" />
+        </Zoom>
       </div>
       <div className="tarrot-3-container">
-        <img src={collage3URL} alt="collage-1" />
+        <Zoom overlayBgColorEnd="#3d566f">
+          <img src={collage3URL} alt="collage-1" />
+        </Zoom>
       </div>
       <div className="tarrot-4-container">
-        <img src={collage4URL} alt="collage-1" />
+        <Zoom overlayBgColorEnd="#3d566f">
+          <img src={collage4URL} alt="collage-1" />
+        </Zoom>
       </div>
     </Carousel>
   </div>
