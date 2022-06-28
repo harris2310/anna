@@ -39,9 +39,14 @@ const Collages = () => (
               </div>
             </div>
           </Link>
-          <div className="collage">
-            <img src={pinkFlowerURL} alt="tarrot 3" />
-          </div>
+          <Link to="/sandman">
+            <div className="collage-container">
+              <img src={pinkFlowerURL} className="collage" alt="tarrot 3" />
+              <div className="collage-overlay">
+                <div className="text">Τhe Endless [Sandman tribute]</div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="col">

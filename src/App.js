@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Main from './components/Main';
 import Tarrot from './components/Tarrot';
 import Astronaut from './components/Astronaut';
+import Sandman from './components/Sandman';
 import Footer from './components/Footer';
 import './css/style.css';
 
@@ -73,6 +74,14 @@ function App() {
           element={(
             <div>
               <Astronaut />
+            </div>
+          )}
+        />
+        <Route
+          path="/sandman"
+          element={(
+            <div>
+              <Sandman />
             </div>
           )}
         />
