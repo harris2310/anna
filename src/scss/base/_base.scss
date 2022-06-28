@@ -1,22 +1,14 @@
 .nav-item-title {
   @include nav-item(0);
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
-.nav-item-about {
+.nav-item-link {
   @include nav-item(0.5em);
 }
 
-.nav-item-contact {
-  @include nav-item(0.5em);
-}
-
-.nav-item-collages {
-  @include nav-item(0.5em);
-}
-
-.nav-item-poems {
+.menu-item-link {
   @include nav-item(0.5em);
 }
 
@@ -28,7 +20,7 @@
 .arcana-text {
   text-align: center;
   color: #f4c7c7;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 600;
 }
 

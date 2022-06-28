@@ -27,15 +27,39 @@ img {
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
   padding: 2em;
+  padding-bottom: 1em;
+}
+
+.nav-vertical-main {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  padding: 2em;
+  padding-bottom: 1em;
 }
 
 .nav-title {
   text-align: center;
 }
 
+.ham-menu {
+  height: 30px;
+  max-width: 35px;
+  display: none;
+  background: linear-gradient(
+    to bottom, 
+    $light-blue, $light-blue 10%, 
+    $dark-blue 10%, $dark-blue 40%, 
+    $light-blue 40%, $light-blue 50%, 
+    $dark-blue 50%, $dark-blue 90%, 
+    $light-blue 90%, $light-blue 100%
+  );
+}
+
 .tarrot {
   margin-top: 3em;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .tarrot-cards {
@@ -78,34 +102,19 @@ img {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1200px) {
-  .nav-item-about {
-    display: none;
-  }
-  
-  .nav-item-contact {
-    display: none;
-  }
-  
-  .nav-item-poems {
-    display: none;
-  }
-  
-  .nav-item-collages {
+  .nav-item-link {
     display: none;
   }
 
-  .nav-links {
-    height: 30px;
-    max-width: 35px;
+  .ham-menu {
     display: block;
-    background: linear-gradient(
-      to bottom, 
-      $light-blue, $light-blue 10%, 
-      $dark-blue 10%, $dark-blue 40%, 
-      $light-blue 40%, $light-blue 50%, 
-      $dark-blue 50%, $dark-blue 90%, 
-      $light-blue 90%, $light-blue 100%
-    );
+  }
+
+  .tarrot-cards {
+    margin: auto;
+    margin-top: 1em;
+    width: 80%;
+    padding-bottom: 100px;
   }
 }
 

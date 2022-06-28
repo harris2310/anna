@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import Menu from './components/Menu';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -10,6 +11,7 @@ import './css/style.css';
 
 function App() {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [menuClicked, setMenuClicked] = useState(false);
 
   const handleFormSubmit = (e) => {
     const serviceId = 'service_qq1m8dp';
@@ -24,15 +26,28 @@ function App() {
       });
   };
 
+  const handleHamClick = () => {
+    setMenuClicked(true);
+  };
+
+  const handleTitleClick = () => {
+    setMenuClicked(false);
+  };
+
   return (
     <div>
-      <NavBar />
+      <NavBar
+        handleHamClick={handleHamClick}
+        handleTitleClick={handleTitleClick}
+      />
       <Routes>
         <Route
           path="/"
-          element={(
-            <Main />
-          )}
+          element={
+            menuClicked
+              ? <Menu />
+              : <Main />
+          }
         />
         <Route
           path="/about"

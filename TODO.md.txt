@@ -1,9 +1,9 @@
 HIGH PRIORITY
-*Carousel Zoom in on Click
 *Favicon
 *About
 *Logo
 *Responsive
+*Smooth Swipe
 
 
 MEDIUM PRIORITY
@@ -15,6 +15,8 @@ LOW PRIORITY
 
 
 DONE
+*Hamburger menu
+*Carousel Zoom in on Click
 *Footer links
 *Contact form
 *Carousel
