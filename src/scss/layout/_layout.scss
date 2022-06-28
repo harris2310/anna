@@ -77,6 +77,26 @@ img {
    margin: 4em;
  }
 
+.collages-container {
+  width: 70%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.collages-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
 .about-layout {
   text-align: center;
   margin-top: 2em;

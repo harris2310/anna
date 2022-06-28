@@ -11,6 +11,10 @@ $poppins-font: 'Poppins', sans-serif;
   padding: $padding;
 }
 
+@mixin collage-item() {
+  padding: 1em;
+}
+
 @mixin tarrot-card() {
   max-width: 400px;
   height: auto;

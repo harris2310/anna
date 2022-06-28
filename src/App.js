@@ -3,9 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import Menu from './components/Menu';
 import NavBar from './components/NavBar';
+import Collages from './components/Collages';
 import About from './components/About';
 import Contact from './components/Contact';
 import Main from './components/Main';
+import Tarrot from './components/Tarrot';
+import Astronaut from './components/Astronaut';
 import Footer from './components/Footer';
 import './css/style.css';
 
@@ -48,6 +51,30 @@ function App() {
               ? <Menu />
               : <Main />
           }
+        />
+        <Route
+          path="/collages"
+          element={(
+            <div>
+              <Collages />
+            </div>
+          )}
+        />
+        <Route
+          path="/tarrot"
+          element={(
+            <div>
+              <Tarrot />
+            </div>
+          )}
+        />
+        <Route
+          path="/astronaut"
+          element={(
+            <div>
+              <Astronaut />
+            </div>
+          )}
         />
         <Route
           path="/about"

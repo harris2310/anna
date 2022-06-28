@@ -44,6 +44,44 @@
   transform: rotate(135deg);
 }
 
+.collage {
+  @include collage-item();
+}
+
+.collage-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: $dark-blue;
+}
+
+.collage-container {
+  position: relative;
+}
+
+.collage-container:hover .collage-overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 form label {
   color: $light-blue;
   font-size: smaller;
@@ -52,7 +90,7 @@ form label {
 input {
   display: block;
   border-radius: 4px;
-  border: 1px solid white;
+  border: 1px solid $light-pink;
   padding: 10px 15px;
   margin-bottom: 15px;
   font-size: 14px;
