@@ -12,7 +12,7 @@ html {
 body {
   position: relative;
   min-height: 100vh;
-  font-family: $poppins-font;
+  font-family: 'Rubik', sans-serif;
   min-height: -webkit-fill-available;
   background-color: #3d566f;
 }
@@ -88,11 +88,12 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
 .col {
-  display: flex;
-  align-items: flex-start;
+
 }
 
 
