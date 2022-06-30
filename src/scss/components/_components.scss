@@ -50,6 +50,7 @@
 
 .collage-overlay {
   position: absolute;
+  cursor: pointer;
   top: 0;
   bottom: 0;
   left: 0;
@@ -66,7 +67,7 @@
 }
 
 .collage-container:hover .collage-overlay {
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 

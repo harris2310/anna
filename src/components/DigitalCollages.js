@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Transition } from 'react-transition-group';
+import Zoom from 'react-medium-image-zoom';
 import tarrot1URL from '../collages/tarrot1-edit.png';
 import xroniaNustaURL from '../collages/xronia_nusta.jpg';
 import joanDidionURL from '../collages/african_woman.jpg';
 import nightcollageURL from '../collages/night-collage.png';
 import pinkFlowerURL from '../collages/pink_flower.jpg';
+import blueDudeURL from '../collages/blue_dude.jpg';
 import deepBlueURL from '../collages/deep_blue.jpg';
 import astronautURL from '../collages/astronaut_1.jpg';
 import AnimatedPage from './AnimatedPage';
 
-const Collages = () => (
+const DigitalCollages = () => (
   <AnimatedPage>
     <div className="collages-container">
       <div className="collages-grid">
@@ -24,7 +25,14 @@ const Collages = () => (
             </div>
           </Link>
           <div>
-            <img src={joanDidionURL} className="collage" alt="Metamorphosis" />
+            <div className="collage-container">
+              <Zoom overlayBgColorEnd="#3d566f">
+                <img src={joanDidionURL} className="collage" alt="Metamorphosis" />
+                <div className="collage-overlay">
+                  <div className="text">Women in Architecture</div>
+                </div>
+              </Zoom>
+            </div>
           </div>
           <div className="collage">
             <img src={xroniaNustaURL} alt="tarrot 2" />
@@ -41,7 +49,7 @@ const Collages = () => (
           </Link>
           <Link to="/sandman">
             <div className="collage-container">
-              <img src={pinkFlowerURL} className="collage" alt="tarrot 3" />
+              <img src={blueDudeURL} className="collage" alt="tarrot 3" />
               <div className="collage-overlay">
                 <div className="text">Τhe Endless [Sandman tribute]</div>
               </div>
@@ -55,10 +63,18 @@ const Collages = () => (
           <div className="collage">
             <img src={deepBlueURL} alt="tarrot 2" />
           </div>
+          <Link to="/sandman">
+            <div className="collage-container">
+              <img src={pinkFlowerURL} className="collage" alt="tarrot 3" />
+              <div className="collage-overlay">
+                <div className="text">Pink Dude</div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
   </AnimatedPage>
 );
 
-export default Collages;
+export default DigitalCollages;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Zoom from 'react-medium-image-zoom';
 import AnimatedPage from './AnimatedPage';
 import tarrot1URL from '../collages/tarrot1-edit.png';
 import tarrot2URL from '../collages/tarrot2-edit.png';
@@ -11,20 +12,28 @@ const Tarrot = () => (
       <div className="collages-grid">
         <div>
           <div className="collage">
-            <img src={tarrot1URL} alt="Tarrot collage" />
+            <Zoom overlayBgColorEnd="#3d566f">
+              <img src={tarrot1URL} alt="Tarrot collage" />
+            </Zoom>
           </div>
           <div className="collage">
-            <img src={tarrot2URL} alt="Tarrot collage" />
+            <Zoom overlayBgColorEnd="#3d566f">
+              <img src={tarrot2URL} alt="Tarrot collage" />
+            </Zoom>
           </div>
         </div>
         <div>
           <div className="collage">
-            <img src={tarrot4URL} alt="Tarrot collage" />
+            <Zoom overlayBgColorEnd="#3d566f">
+              <img src={tarrot4URL} alt="Tarrot collage" />
+            </Zoom>
           </div>
         </div>
         <div>
           <div className="collage">
-            <img src={tarrot3URL} alt="Tarrot Collage" />
+            <Zoom overlayBgColorEnd="#3d566f">
+              <img src={tarrot3URL} alt="Tarrot Collage" />
+            </Zoom>
           </div>
         </div>
       </div>

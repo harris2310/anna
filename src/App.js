@@ -4,7 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Menu from './components/Menu';
 import NavBar from './components/NavBar';
-import Collages from './components/Collages';
+import DigitalCollages from './components/DigitalCollages';
 import About from './components/About';
 import Contact from './components/Contact';
 import Main from './components/Main';
@@ -47,7 +47,6 @@ function App() {
         handleTitleClick={handleTitleClick}
       />
       <AnimatePresence exitBeforeEnter>
-
         <Routes key={location.pathname} location={location}>
           <Route
             path="/"
@@ -61,7 +60,7 @@ function App() {
             path="/collages"
             element={(
               <div>
-                <Collages />
+                <DigitalCollages />
               </div>
             )}
           />

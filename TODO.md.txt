@@ -1,4 +1,7 @@
 HIGH PRIORITY
+*Create categories
+*Add the rest of the Images
+*Suspense
 *Favicon
 *About
 *Logo
@@ -15,6 +18,7 @@ LOW PRIORITY
 
 
 DONE
+*Fixed scrollbar appearing in some pages and others not, causes reflow
 *Hamburger menu
 *Carousel Zoom in on Click
 *Footer links

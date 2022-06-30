@@ -13,7 +13,7 @@ const NavBar = (props) => (
       <div>
         <Link to="/" className="ham-menu" onClick={props.handleHamClick} />
         <Link to="/collages" className="nav-item-link">
-          Collages
+          Art
         </Link>
         <Link to="/poems" className="nav-item-link">
           Poems
