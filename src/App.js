@@ -13,6 +13,7 @@ import Astronaut from './components/Astronaut';
 import Sandman from './components/Sandman';
 import Footer from './components/Footer';
 import './css/style.css';
+import TheEndless from './components/TheEndless';
 
 function App() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -77,6 +78,14 @@ function App() {
             element={(
               <div>
                 <Astronaut />
+              </div>
+            )}
+          />
+          <Route
+            path="/the-endless"
+            element={(
+              <div>
+                <TheEndless />
               </div>
             )}
           />

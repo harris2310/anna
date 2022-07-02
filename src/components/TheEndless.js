@@ -1,14 +1,16 @@
-import React from 'react';
-import useStorage from '../hooks/useStorage';
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable arrow-body-style */
+import React, { useState, useEffect } from 'react';
 import {
   ref,
 } from 'firebase/storage';
-import { storage } from "../firebase/config";
 import Zoom from 'react-medium-image-zoom';
+import { storage } from '../firebase/config';
+import useStorage from '../hooks/useStorage';
 import AnimatedPage from './AnimatedPage';
 
-const Tarrot = () => {
-  const imagesListRef = ref(storage, 'images/Tarrot');
+const TheEndless = () => {
+  const imagesListRef = ref(storage, 'images/The Endless');
   const imageUrls = useStorage(imagesListRef);
 
   return (
@@ -30,4 +32,4 @@ const Tarrot = () => {
   );
 };
 
-export default Tarrot;
+export default TheEndless;

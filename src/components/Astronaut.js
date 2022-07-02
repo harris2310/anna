@@ -1,34 +1,35 @@
-import React from 'react';
-import astronaut1URL from '../collages/astronaut_1.jpg';
-import astronaut2URL from '../collages/astronaut_2.jpg';
-import AnimatedPage from './AnimatedPage';
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable arrow-body-style */
+import React, { useState, useEffect } from 'react';
+import {
+  ref,
+} from 'firebase/storage';
 import Zoom from 'react-medium-image-zoom';
+import { storage } from '../firebase/config';
+import useStorage from '../hooks/useStorage';
+import AnimatedPage from './AnimatedPage';
 
-const Astronaut = () => (
-  <AnimatedPage>
-    <div className="collages-container">
-      <div className="collages-grid">
-        <div>
-          <div className="collage">
-            <Zoom overlayBgColorEnd="#3d566f">
-              <img src={astronaut1URL} alt="Astronaut collage" />
-            </Zoom>
-          </div>
-        </div>
-        <div>
-          <div className="collage">
-            <Zoom overlayBgColorEnd="#3d566f">
-              <img src={astronaut2URL} alt="Tarrot collage" />
-            </Zoom>
-          </div>
-        </div>
-        <div className="col">
-          <div className="col-3-flex">
-          </div>
+const Astronaut = () => {
+  const imagesListRef = ref(storage, 'images/The Man Who Fell To Earth');
+  const imageUrls = useStorage(imagesListRef);
+
+  return (
+    <AnimatedPage>
+      <div className="collages-container">
+        <div className="collages-grid">
+          {imageUrls.map((url) => {
+            return (
+              <div className="collage">
+                <Zoom overlayBgColorEnd="#3d566f">
+                  <img src={url} />
+                </Zoom>
+              </div>
+            );
+          })}
         </div>
       </div>
-    </div>
-  </AnimatedPage>
-);
+    </AnimatedPage>
+  );
+};
 
 export default Astronaut;
