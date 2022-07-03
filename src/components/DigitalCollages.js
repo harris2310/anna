@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
 import tarrot1URL from '../collages/tarrot1-edit.png';
 import xroniaNustaURL from '../collages/xronia_nusta.jpg';
-import joanDidionURL from '../collages/african_woman.jpg';
+import redURL from '../collages/Red-Blue-Yellow/week 28INSTA.png';
 import nightcollageURL from '../collages/night-collage.png';
 import pinkFlowerURL from '../collages/pink_flower.jpg';
 import blueDudeURL from '../collages/blue_dude.jpg';
 import deepBlueURL from '../collages/deep_blue.jpg';
 import astronautURL from '../collages/astronaut_1.jpg';
+import pastelURL from '../collages/Pastel Apocalypse/week 41 1insta.png';
 import AnimatedPage from './AnimatedPage';
 
 const DigitalCollages = () => {
@@ -26,19 +27,22 @@ const DigitalCollages = () => {
                 </div>
               </div>
             </Link>
-            <div>
+            <Link to="/red-blue-yellow">
               <div className="collage-container">
-                <Zoom overlayBgColorEnd="#3d566f">
-                  <img src={joanDidionURL} className="collage" alt="Metamorphosis" />
-                  <div className="collage-overlay">
-                    <div className="text">Women in Architecture</div>
-                  </div>
-                </Zoom>
+                <img src={redURL} className="collage" alt="Red Blue Yellow" />
+                <div className="collage-overlay">
+                  <div className="text">Red Blue Yellow</div>
+                </div>
               </div>
-            </div>
-            <div className="collage">
-              <img src={xroniaNustaURL} alt="tarrot 2" />
-            </div>
+            </Link>
+            <Link to="/pastel-apocalypse">
+              <div className="collage-container">
+                <img src={pastelURL} className="collage" alt="Pastel Apocalypse" />
+                <div className="collage-overlay">
+                  <div className="text">Pastel Apocalypse</div>
+                </div>
+              </div>
+            </Link>
           </div>
           <div>
             <Link to="/astronaut">
@@ -51,7 +55,7 @@ const DigitalCollages = () => {
             </Link>
             <Link to="/the-endless">
               <div className="collage-container">
-                <img src={blueDudeURL} className="collage" alt="Astronaut" />
+                <img src={blueDudeURL} className="collage" alt="the endless" />
                 <div className="collage-overlay">
                   <div className="text">The Endless</div>
                 </div>
@@ -62,14 +66,11 @@ const DigitalCollages = () => {
             <Link to="/night">
               <img src={nightcollageURL} className="collage" alt="Night Collage" />
             </Link>
-            <div className="collage">
-              <img src={deepBlueURL} alt="tarrot 2" />
-            </div>
-            <Link to="/sandman">
+            <Link to="/music-homages">
               <div className="collage-container">
-                <img src={pinkFlowerURL} className="collage" alt="tarrot 3" />
+                <img src={deepBlueURL} className="collage" alt="Music Homages" />
                 <div className="collage-overlay">
-                  <div className="text">Pink Dude</div>
+                  <div className="text">Music Homages</div>
                 </div>
               </div>
             </Link>

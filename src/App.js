@@ -11,6 +11,9 @@ import Main from './components/Main';
 import Tarrot from './components/Tarrot';
 import Astronaut from './components/Astronaut';
 import Sandman from './components/Sandman';
+import RedBlueYellow from './components/RedBlueYellow';
+import MusicHomages from './components/MusicHomages';
+import PastelApocalypse from './components/PastelApocalypse';
 import Footer from './components/Footer';
 import './css/style.css';
 import TheEndless from './components/TheEndless';
@@ -86,6 +89,30 @@ function App() {
             element={(
               <div>
                 <TheEndless />
+              </div>
+            )}
+          />
+          <Route
+            path="/pastel-apocalypse"
+            element={(
+              <div>
+                <PastelApocalypse />
+              </div>
+            )}
+          />
+          <Route
+            path="/music-homages"
+            element={(
+              <div>
+                <MusicHomages />
+              </div>
+            )}
+          />
+          <Route
+            path="/red-blue-yellow"
+            element={(
+              <div>
+                <RedBlueYellow />
               </div>
             )}
           />
