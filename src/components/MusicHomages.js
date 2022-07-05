@@ -19,7 +19,7 @@ const RedBlueYellow = () => {
             return (
               <div className="collage">
                 <Zoom overlayBgColorEnd="#3d566f">
-                  <img src={url} />
+                  <img alt="Music Homeage Collage" src={url} />
                 </Zoom>
               </div>
             );

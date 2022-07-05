@@ -2,15 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
-import tarrot1URL from '../collages/tarrot1-edit.png';
+import tarrot1URL from '../collages/Tarrot/tarrot1-edit.webp';
 import xroniaNustaURL from '../collages/xronia_nusta.jpg';
 import redURL from '../collages/Red-Blue-Yellow/week 28INSTA.png';
 import nightcollageURL from '../collages/night-collage.png';
 import pinkFlowerURL from '../collages/pink_flower.jpg';
-import blueDudeURL from '../collages/blue_dude.jpg';
+import blueDudeURL from '../collages/week40insta.jpg';
 import deepBlueURL from '../collages/deep_blue.jpg';
 import astronautURL from '../collages/astronaut_1.jpg';
-import pastelURL from '../collages/Pastel Apocalypse/week 41 1insta.png';
+import pastelURL from '../collages/Pastel Apocalypse/week 41 1insta.jpg';
 import AnimatedPage from './AnimatedPage';
 
 const DigitalCollages = () => {

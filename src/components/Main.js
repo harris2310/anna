@@ -5,10 +5,10 @@ import Zoom from 'react-medium-image-zoom';
 import { CustomLeftArrow, CustomRightArrow } from './CustomArrows';
 import 'react-medium-image-zoom/dist/styles.css';
 import 'react-multi-carousel/lib/styles.css';
-import collage1URL from '../collages/tarrot1-edit.webp';
-import collage2URL from '../collages/tarrot2-edit.png';
-import collage3URL from '../collages/tarrot3-edit.png';
-import collage4URL from '../collages/tarrot4-edit.png';
+import collage1URL from '../collages/Tarrot/tarrot1-edit.webp';
+import collage2URL from '../collages/Tarrot/tarrot-2.webp';
+import collage3URL from '../collages/Tarrot/tarrot-3.webp';
+import collage4URL from '../collages/Tarrot/tarrot-4.webp';
 
 const Main = () => (
   <div className="tarrot">
